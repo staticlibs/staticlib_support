@@ -7,7 +7,7 @@ This project contains a number of helper templates.
 
 This library is header-only and depends on [staticlib_config](https://github.com/staticlibs/staticlib_config).
 
-Link to the [API documentation](http://staticlibs.github.io/staticlib_config/docs/html/namespacestaticlib_1_1support.html).
+Link to the [API documentation](http://staticlibs.github.io/staticlib_support/docs/html/namespacestaticlib_1_1support.html).
 
 Features
 --------
