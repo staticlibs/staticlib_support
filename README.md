@@ -16,29 +16,29 @@ Library include:
 
     #include "staticlib/support.hpp"
 
-####to_string template
+#### to_string template ####
 
 Implements `to_string` template that calls `std::to_string` on all supported platforms except Android, 
 where `std::to_string` is missed for some versions of NDK. `std::stringstream` implementation
 is used for Android.
 
-####defer template
+#### defer template ####
 
 Implements a lambda function holder, that will execute specified lambda on destruction. 
 It is similar in nature with [defer in golang](https://tour.golang.org/flowcontrol/12) and
 with [finally in GSL.util](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#gslutil-utilities).
 
-####basic exception
+#### basic exception ####
 
 Exception class that extends `std::exception` and implements constructor that takes `std::string`
 and `what` method that returns that string. All module-specific exception classed in Staticlibs 
 extends `sl::support::exception`.
 
-####optional template
+#### optional template ####
 
 Basic implementation of `optional` template [from C++17](http://en.cppreference.com/w/cpp/utility/optional).
 
-####observer_ptr template
+#### observer_ptr template ####
 
 Basic implementation of non-owning pointer template.
 
