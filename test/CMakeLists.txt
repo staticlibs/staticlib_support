@@ -31,7 +31,8 @@ if ( NOT DEFINED STATICLIB_DEPS )
 endif ( )
 staticlib_add_subdirectory ( ${STATICLIB_DEPS}/staticlib_config )
 staticlib_add_subdirectory ( ${CMAKE_CURRENT_LIST_DIR}/../../staticlib_support )
-set ( ${PROJECT_NAME}_DEPS staticlib_config staticlib_support )
+
+set ( ${PROJECT_NAME}_DEPS staticlib_support )
 staticlib_pkg_check_modules ( ${PROJECT_NAME}_DEPS_PC REQUIRED ${PROJECT_NAME}_DEPS )
 
 # tests
