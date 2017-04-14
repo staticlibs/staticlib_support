@@ -13,6 +13,7 @@
 #include "staticlib/support/defer.hpp"
 #include "staticlib/support/exception.hpp"
 #include "staticlib/support/is_integer.hpp"
+#include "staticlib/support/make_unique.hpp"
 #include "staticlib/support/observer_ptr.hpp"
 #include "staticlib/support/optional.hpp"
 #include "staticlib/support/to_string.hpp"

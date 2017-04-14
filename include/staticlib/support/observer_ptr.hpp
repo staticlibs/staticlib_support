@@ -157,8 +157,8 @@ public:
     /**
      * Make this instance empty
      */
-    void reset(T* target = nullptr) {
-        target = target;
+    void reset(T* targ = nullptr) {
+        target = targ;
     }
 };
 
