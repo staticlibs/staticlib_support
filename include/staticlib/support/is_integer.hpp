@@ -143,6 +143,61 @@ bool is_uint16_positive(T val) {
 }
 
 /**
+ * Checks that specified unsigned integer lies between `<int64_t>::min()` and `<int64_t>::max()`
+ * 
+ * @param val integer
+ * @return true if check successful, false otherwise
+ */
+template <typename T>
+typename std::enable_if<std::is_unsigned<T>::value, bool>::type is_int64(T val) {
+    return val <= static_cast<uint64_t> (std::numeric_limits<int64_t>::max());
+}
+
+/**
+ * Checks that specified signed integer lies between `<int64_t>::min()` and `<int64_t>::max()`
+ * 
+ * @param val integer
+ * @return true if check successful, false otherwise
+ */
+template <typename T>
+typename std::enable_if<!std::is_unsigned<T>::value, bool>::type is_int64(T val) {
+    return val >= std::numeric_limits<int64_t>::min() && val <= std::numeric_limits<int64_t>::max();
+}
+
+/**
+ * Checks that specified unsigned integer lies between `0` (inclusive) and `<uint64_t>::max()`
+ * 
+ * @param val integer
+ * @return true if check successful, false otherwise
+ */
+template <typename T>
+typename std::enable_if<std::is_unsigned<T>::value, bool>::type is_uint64(T val) {
+    return val <= std::numeric_limits<uint64_t>::max();
+}
+
+/**
+ * Checks that specified signed integer lies between `0` (inclusive) and `<uint64_t>::max()`
+ * 
+ * @param val integer
+ * @return true if check successful, false otherwise
+ */
+template <typename T>
+typename std::enable_if<!std::is_unsigned<T>::value, bool>::type is_uint64(T val) {
+    return val >= 0 && val <= std::numeric_limits<int64_t>::max();
+}
+
+/**
+ * Checks that specified integer lies between `0` (exclusive) and `<uint64_t>::max()`
+ * 
+ * @param val integer
+ * @return true if check successful, false otherwise
+ */
+template <typename T>
+bool is_uint64_positive(T val) {
+    return 0 != val && is_uint64(val);
+}
+
+/**
  * Checks that specified unsigned integer lies between `<streamsize>::min()` and `<streamsize>::max()`
  * 
  * @param val integer

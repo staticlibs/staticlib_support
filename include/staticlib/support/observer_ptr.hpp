@@ -153,7 +153,7 @@ public:
             throw bad_observed_pointer_access_exception();
         }
     }
-    
+
     /**
      * Make this instance empty
      */

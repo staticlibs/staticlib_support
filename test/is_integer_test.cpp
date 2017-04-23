@@ -79,6 +79,31 @@ void test_is_uint16_positive() {
     slassert(!sl::support::is_uint16_positive(static_cast<uint32_t> (std::numeric_limits<uint16_t>::max()) + 1));
 }
 
+void test_is_int64() {
+    slassert(sl::support::is_int64(-1));
+    slassert(sl::support::is_int64(0));
+    slassert(sl::support::is_int64(1));
+    slassert(!sl::support::is_int64(std::numeric_limits<uint64_t>::max()));
+    slassert(sl::support::is_int64(std::numeric_limits<int64_t>::min()));
+    slassert(sl::support::is_int64(std::numeric_limits<int64_t>::max()));
+}
+
+void test_is_uint64() {
+    slassert(sl::support::is_uint64(0));
+    slassert(sl::support::is_uint64(1));
+    slassert(!sl::support::is_uint64(-1));
+    slassert(sl::support::is_uint64(std::numeric_limits<uint64_t>::min()));
+    slassert(sl::support::is_uint64(std::numeric_limits<uint64_t>::max()));
+}
+
+void test_is_uint64_positive() {
+    slassert(!sl::support::is_uint64_positive(0));
+    slassert(sl::support::is_uint64_positive(1));
+    slassert(!sl::support::is_uint64_positive(-1));
+    slassert(!sl::support::is_uint64_positive(std::numeric_limits<uint64_t>::min()));
+    slassert(sl::support::is_uint64_positive(std::numeric_limits<uint64_t>::max()));
+}
+
 void test_is_streamsize() {
     slassert(sl::support::is_streamsize(-1));
     slassert(sl::support::is_streamsize(0));
@@ -111,6 +136,9 @@ int main() {
         test_is_int16();
         test_is_uint16();
         test_is_uint16_positive();
+        test_is_int64();
+        test_is_uint64();
+        test_is_uint64_positive();
         test_is_streamsize();
         test_is_sizet();
         test_is_sizet_positive();
