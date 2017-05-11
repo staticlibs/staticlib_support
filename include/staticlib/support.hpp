@@ -17,6 +17,7 @@
 #include "staticlib/support/observer_ptr.hpp"
 #include "staticlib/support/optional.hpp"
 #include "staticlib/support/to_string.hpp"
+#include "staticlib/support/tribool.hpp"
 
 #endif	/* STATICLIB_SUPPORT_HPP */
 
