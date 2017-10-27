@@ -61,6 +61,16 @@ std::string to_string(const T& obj) {
 #endif // STATICLIB_ANDROID
 }
 
+/**
+ * Converts bool value to "true" or "false" string.
+ * 
+ * @param val boolean value
+ * @return "true" or "false" string
+ */
+inline std::string to_string_bool(bool val) {
+    return val ? "true" : "false";
+}
+
 } // namespace
 }
 
