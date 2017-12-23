@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">staticlib_support
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">1.1.0</span>
    </div>
   </td>
  </tr>
@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -69,6 +70,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="namespacemembers.html"><span>All</span></a></li>
       <li class="current"><a href="namespacemembers_func.html"><span>Functions</span></a></li>
+      <li><a href="namespacemembers_type.html"><span>Typedefs</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow4" class="tabs3">
+    <ul class="tablist">
+      <li><a href="#index_d"><span>d</span></a></li>
+      <li><a href="#index_i"><span>i</span></a></li>
+      <li><a href="#index_m"><span>m</span></a></li>
+      <li><a href="#index_o"><span>o</span></a></li>
+      <li><a href="#index_t"><span>t</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -77,7 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,15 +98,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 
 <div class="contents">
-&#160;<ul>
+&#160;
+
+<h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
 <li>defer()
 : <a class="el" href="namespacestaticlib_1_1support.html#a6f24e0f88636d431df4e27f14c2de3cc">staticlib::support</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
+<li>indeterminate()
+: <a class="el" href="namespacestaticlib_1_1support_1_1logic.html#acf57c5254efd7179f7e8e6a4fbdf9987">staticlib::support::logic</a>
 </li>
 <li>is_int16()
 : <a class="el" href="namespacestaticlib_1_1support.html#a36ea092d316e4edf38ff4a32bce8e9a2">staticlib::support</a>
 </li>
 <li>is_int32()
 : <a class="el" href="namespacestaticlib_1_1support.html#aa70492b9dcf9caa2f3e8bcaa2b867da7">staticlib::support</a>
+</li>
+<li>is_int64()
+: <a class="el" href="namespacestaticlib_1_1support.html#ad3176a1d306f0725d8ba18f5560b7e73">staticlib::support</a>
 </li>
 <li>is_sizet()
 : <a class="el" href="namespacestaticlib_1_1support.html#a6eb15d4cbdc6584a9d43a9aa27a31e64">staticlib::support</a>
@@ -118,23 +141,62 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>is_uint32_positive()
 : <a class="el" href="namespacestaticlib_1_1support.html#aaa0d458014db0c1e081e5fcf7ed2e5f3">staticlib::support</a>
 </li>
+<li>is_uint64()
+: <a class="el" href="namespacestaticlib_1_1support.html#a62a39c59a3dc5a647d2ec8f92427cc65">staticlib::support</a>
+</li>
+<li>is_uint64_positive()
+: <a class="el" href="namespacestaticlib_1_1support.html#a9ec141d4788111f8020fadd998316569">staticlib::support</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
 <li>make_observer_ptr()
 : <a class="el" href="namespacestaticlib_1_1support.html#a0582c0b63e0df3a12a602e6ecd658c8d">staticlib::support</a>
 </li>
 <li>make_optional()
 : <a class="el" href="namespacestaticlib_1_1support.html#a1071ba913dab40a35569fb2a671147e6">staticlib::support</a>
 </li>
+<li>make_unique()
+: <a class="el" href="namespacestaticlib_1_1support.html#a57c832581e07ac05c979fc9c013f1d1a">staticlib::support</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
+<li>operator!()
+: <a class="el" href="group__logical.html#gac51b84b4360334c348fc3f42a890f7de">staticlib::support::logic</a>
+</li>
+<li>operator!=()
+: <a class="el" href="namespacestaticlib_1_1support_1_1logic.html#a4cd625ec0bb69c69937fd7ebb18859da">staticlib::support::logic</a>
+</li>
+<li>operator&amp;&amp;()
+: <a class="el" href="group__logical.html#gadea56adb9a3c2328a46c731fda34eba4">staticlib::support::logic</a>
+</li>
+<li>operator==()
+: <a class="el" href="namespacestaticlib_1_1support_1_1logic.html#ae4ff201cdb5eead4433b7c2f9e223a2d">staticlib::support::logic</a>
+</li>
+<li>operator||()
+: <a class="el" href="group__logical.html#ga2386757f319a979555da9ff704d18b62">staticlib::support::logic</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
 <li>to_string()
 : <a class="el" href="namespacestaticlib_1_1support.html#a9151f4322b0caacc320cb127743e5771">staticlib::support</a>
 </li>
 <li>to_string_any()
 : <a class="el" href="namespacestaticlib_1_1support.html#a38c7e4d90e1857cc04a96b999354416d">staticlib::support</a>
 </li>
+<li>to_string_bool()
+: <a class="el" href="namespacestaticlib_1_1support.html#af69ea9ccffb9250a1beb2c6414ea018d">staticlib::support</a>
+</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 8 2017 13:09:22 for staticlib_support by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 23 2017 12:45:52 for staticlib_support by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

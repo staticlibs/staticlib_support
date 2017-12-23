@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">staticlib_support
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">1.1.0</span>
    </div>
   </td>
  </tr>
@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -62,6 +63,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -69,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -131,6 +133,19 @@ bool &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class
 <tr class="memitem:ad05bf3370f4cbcd178d9254de63bee95"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ad05bf3370f4cbcd178d9254de63bee95"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestaticlib_1_1support.html#ad05bf3370f4cbcd178d9254de63bee95">staticlib::support::is_uint16_positive</a> (T val)</td></tr>
 <tr class="memdesc:ad05bf3370f4cbcd178d9254de63bee95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that specified integer lies between <code>0</code> (exclusive) and <code>&lt;uint16_t&gt;::max()</code>  <a href="#ad05bf3370f4cbcd178d9254de63bee95"></a><br/></td></tr>
+<tr class="memitem:ad3176a1d306f0725d8ba18f5560b7e73"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ad3176a1d306f0725d8ba18f5560b7e73"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
+&lt; std::is_unsigned&lt; T &gt;::value, <br class="typebreak"/>
+bool &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestaticlib_1_1support.html#ad3176a1d306f0725d8ba18f5560b7e73">staticlib::support::is_int64</a> (T val)</td></tr>
+<tr class="memdesc:ad3176a1d306f0725d8ba18f5560b7e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that specified unsigned integer lies between <code>&lt;int64_t&gt;::min()</code> and <code>&lt;int64_t&gt;::max()</code>  <a href="#ad3176a1d306f0725d8ba18f5560b7e73"></a><br/></td></tr>
+<tr class="memitem:a62a39c59a3dc5a647d2ec8f92427cc65"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a62a39c59a3dc5a647d2ec8f92427cc65"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
+&lt; std::is_unsigned&lt; T &gt;::value, <br class="typebreak"/>
+bool &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestaticlib_1_1support.html#a62a39c59a3dc5a647d2ec8f92427cc65">staticlib::support::is_uint64</a> (T val)</td></tr>
+<tr class="memdesc:a62a39c59a3dc5a647d2ec8f92427cc65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that specified unsigned integer lies between <code>0</code> (inclusive) and <code>&lt;uint64_t&gt;::max()</code>  <a href="#a62a39c59a3dc5a647d2ec8f92427cc65"></a><br/></td></tr>
+<tr class="memitem:a9ec141d4788111f8020fadd998316569"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a9ec141d4788111f8020fadd998316569"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestaticlib_1_1support.html#a9ec141d4788111f8020fadd998316569">staticlib::support::is_uint64_positive</a> (T val)</td></tr>
+<tr class="memdesc:a9ec141d4788111f8020fadd998316569"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that specified integer lies between <code>0</code> (exclusive) and <code>&lt;uint64_t&gt;::max()</code>  <a href="#a9ec141d4788111f8020fadd998316569"></a><br/></td></tr>
 <tr class="memitem:ab29325da01c2de96f1cc8fffc0c8f781"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ab29325da01c2de96f1cc8fffc0c8f781"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
 &lt; std::is_unsigned&lt; T &gt;::value, <br class="typebreak"/>
@@ -148,7 +163,7 @@ bool &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 8 2017 13:09:22 for staticlib_support by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 23 2017 12:45:52 for staticlib_support by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

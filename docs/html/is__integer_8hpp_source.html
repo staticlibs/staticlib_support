@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">staticlib_support
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">1.1.0</span>
    </div>
   </td>
  </tr>
@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -62,6 +63,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -69,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -173,42 +175,66 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;}</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00152"></a><span class="lineno"><a class="code" href="namespacestaticlib_1_1support.html#ab29325da01c2de96f1cc8fffc0c8f781">  152</a></span>&#160;<span class="keyword">typename</span> std::enable_if&lt;std::is_unsigned&lt;T&gt;::value, <span class="keywordtype">bool</span>&gt;::type <a class="code" href="namespacestaticlib_1_1support.html#ab29325da01c2de96f1cc8fffc0c8f781" title="Checks that specified unsigned integer lies between &lt;streamsize&gt;::min() and &lt;streamsize&gt;::max()">is_streamsize</a>(T val) {</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">return</span> val &lt;= static_cast&lt;std::size_t&gt; (std::numeric_limits&lt;std::streamsize&gt;::max());</div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="code" href="namespacestaticlib_1_1support.html#ad3176a1d306f0725d8ba18f5560b7e73">  152</a></span>&#160;<span class="keyword">typename</span> std::enable_if&lt;std::is_unsigned&lt;T&gt;::value, <span class="keywordtype">bool</span>&gt;::type <a class="code" href="namespacestaticlib_1_1support.html#ad3176a1d306f0725d8ba18f5560b7e73" title="Checks that specified unsigned integer lies between &lt;int64_t&gt;::min() and &lt;int64_t&gt;::max()">is_int64</a>(T val) {</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">return</span> val &lt;= static_cast&lt;uint64_t&gt; (std::numeric_limits&lt;int64_t&gt;::max());</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="keyword">typename</span> std::enable_if&lt;!std::is_unsigned&lt;T&gt;::value, <span class="keywordtype">bool</span>&gt;::type <a class="code" href="namespacestaticlib_1_1support.html#ab29325da01c2de96f1cc8fffc0c8f781" title="Checks that specified unsigned integer lies between &lt;streamsize&gt;::min() and &lt;streamsize&gt;::max()">is_streamsize</a>(T val) {</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordflow">return</span> val &gt;= std::numeric_limits&lt;std::streamsize&gt;::min() &amp;&amp; val &lt;= std::numeric_limits&lt;std::streamsize&gt;::max();</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="keyword">typename</span> std::enable_if&lt;!std::is_unsigned&lt;T&gt;::value, <span class="keywordtype">bool</span>&gt;::type <a class="code" href="namespacestaticlib_1_1support.html#ad3176a1d306f0725d8ba18f5560b7e73" title="Checks that specified unsigned integer lies between &lt;int64_t&gt;::min() and &lt;int64_t&gt;::max()">is_int64</a>(T val) {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordflow">return</span> val &gt;= std::numeric_limits&lt;int64_t&gt;::min() &amp;&amp; val &lt;= std::numeric_limits&lt;int64_t&gt;::max();</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;}</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00174"></a><span class="lineno"><a class="code" href="namespacestaticlib_1_1support.html#a6eb15d4cbdc6584a9d43a9aa27a31e64">  174</a></span>&#160;<span class="keyword">typename</span> std::enable_if&lt;std::is_unsigned&lt;T&gt;::value, <span class="keywordtype">bool</span>&gt;::type <a class="code" href="namespacestaticlib_1_1support.html#a6eb15d4cbdc6584a9d43a9aa27a31e64" title="Checks that specified unsigned integer lies between 0 (inclusive) and &lt;size_t&gt;::max()">is_sizet</a>(T val) {</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordflow">return</span> val &lt;= std::numeric_limits&lt;size_t&gt;::max();</div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="code" href="namespacestaticlib_1_1support.html#a62a39c59a3dc5a647d2ec8f92427cc65">  174</a></span>&#160;<span class="keyword">typename</span> std::enable_if&lt;std::is_unsigned&lt;T&gt;::value, <span class="keywordtype">bool</span>&gt;::type <a class="code" href="namespacestaticlib_1_1support.html#a62a39c59a3dc5a647d2ec8f92427cc65" title="Checks that specified unsigned integer lies between 0 (inclusive) and &lt;uint64_t&gt;::max()">is_uint64</a>(T val) {</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordflow">return</span> val &lt;= std::numeric_limits&lt;uint64_t&gt;::max();</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;}</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="keyword">typename</span> std::enable_if&lt;!std::is_unsigned&lt;T&gt;::value, <span class="keywordtype">bool</span>&gt;::type <a class="code" href="namespacestaticlib_1_1support.html#a6eb15d4cbdc6584a9d43a9aa27a31e64" title="Checks that specified unsigned integer lies between 0 (inclusive) and &lt;size_t&gt;::max()">is_sizet</a>(T val) {</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordflow">if</span> (val &lt; 0) {</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    }</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(val) &lt;= std::numeric_limits&lt;size_t&gt;::max();</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;}</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00199"></a><span class="lineno"><a class="code" href="namespacestaticlib_1_1support.html#a3ace31d6950dd53b4567d73b44b4195d">  199</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacestaticlib_1_1support.html#a3ace31d6950dd53b4567d73b44b4195d" title="Checks that specified integer lies between 0 (exclusive) and &lt;uint32_t&gt;::max()">is_sizet_positive</a>(T val) {</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordflow">return</span> 0 != val &amp;&amp; <a class="code" href="namespacestaticlib_1_1support.html#a6eb15d4cbdc6584a9d43a9aa27a31e64" title="Checks that specified unsigned integer lies between 0 (inclusive) and &lt;size_t&gt;::max()">is_sizet</a>(val);</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;}</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;} <span class="comment">// namespace</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;}</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* STATICLIB_SUPPORT_IS_INTEGER_HPP */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="keyword">typename</span> std::enable_if&lt;!std::is_unsigned&lt;T&gt;::value, <span class="keywordtype">bool</span>&gt;::type <a class="code" href="namespacestaticlib_1_1support.html#a62a39c59a3dc5a647d2ec8f92427cc65" title="Checks that specified unsigned integer lies between 0 (inclusive) and &lt;uint64_t&gt;::max()">is_uint64</a>(T val) {</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordflow">return</span> val &gt;= 0 &amp;&amp; val &lt;= std::numeric_limits&lt;int64_t&gt;::max();</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;}</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00196"></a><span class="lineno"><a class="code" href="namespacestaticlib_1_1support.html#a9ec141d4788111f8020fadd998316569">  196</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacestaticlib_1_1support.html#a9ec141d4788111f8020fadd998316569" title="Checks that specified integer lies between 0 (exclusive) and &lt;uint64_t&gt;::max()">is_uint64_positive</a>(T val) {</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordflow">return</span> 0 != val &amp;&amp; <a class="code" href="namespacestaticlib_1_1support.html#a62a39c59a3dc5a647d2ec8f92427cc65" title="Checks that specified unsigned integer lies between 0 (inclusive) and &lt;uint64_t&gt;::max()">is_uint64</a>(val);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;}</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00207"></a><span class="lineno"><a class="code" href="namespacestaticlib_1_1support.html#ab29325da01c2de96f1cc8fffc0c8f781">  207</a></span>&#160;<span class="keyword">typename</span> std::enable_if&lt;std::is_unsigned&lt;T&gt;::value, <span class="keywordtype">bool</span>&gt;::type <a class="code" href="namespacestaticlib_1_1support.html#ab29325da01c2de96f1cc8fffc0c8f781" title="Checks that specified unsigned integer lies between &lt;streamsize&gt;::min() and &lt;streamsize&gt;::max()">is_streamsize</a>(T val) {</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordflow">return</span> val &lt;= static_cast&lt;std::size_t&gt; (std::numeric_limits&lt;std::streamsize&gt;::max());</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;}</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="keyword">typename</span> std::enable_if&lt;!std::is_unsigned&lt;T&gt;::value, <span class="keywordtype">bool</span>&gt;::type <a class="code" href="namespacestaticlib_1_1support.html#ab29325da01c2de96f1cc8fffc0c8f781" title="Checks that specified unsigned integer lies between &lt;streamsize&gt;::min() and &lt;streamsize&gt;::max()">is_streamsize</a>(T val) {</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordflow">return</span> val &gt;= std::numeric_limits&lt;std::streamsize&gt;::min() &amp;&amp; val &lt;= std::numeric_limits&lt;std::streamsize&gt;::max();</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;}</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00229"></a><span class="lineno"><a class="code" href="namespacestaticlib_1_1support.html#a6eb15d4cbdc6584a9d43a9aa27a31e64">  229</a></span>&#160;<span class="keyword">typename</span> std::enable_if&lt;std::is_unsigned&lt;T&gt;::value, <span class="keywordtype">bool</span>&gt;::type <a class="code" href="namespacestaticlib_1_1support.html#a6eb15d4cbdc6584a9d43a9aa27a31e64" title="Checks that specified unsigned integer lies between 0 (inclusive) and &lt;size_t&gt;::max()">is_sizet</a>(T val) {</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordflow">return</span> val &lt;= std::numeric_limits&lt;size_t&gt;::max();</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;}</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="keyword">typename</span> std::enable_if&lt;!std::is_unsigned&lt;T&gt;::value, <span class="keywordtype">bool</span>&gt;::type <a class="code" href="namespacestaticlib_1_1support.html#a6eb15d4cbdc6584a9d43a9aa27a31e64" title="Checks that specified unsigned integer lies between 0 (inclusive) and &lt;size_t&gt;::max()">is_sizet</a>(T val) {</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keywordflow">if</span> (val &lt; 0) {</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    }</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(val) &lt;= std::numeric_limits&lt;size_t&gt;::max();</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;}</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00254"></a><span class="lineno"><a class="code" href="namespacestaticlib_1_1support.html#a3ace31d6950dd53b4567d73b44b4195d">  254</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacestaticlib_1_1support.html#a3ace31d6950dd53b4567d73b44b4195d" title="Checks that specified integer lies between 0 (exclusive) and &lt;uint32_t&gt;::max()">is_sizet_positive</a>(T val) {</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keywordflow">return</span> 0 != val &amp;&amp; <a class="code" href="namespacestaticlib_1_1support.html#a6eb15d4cbdc6584a9d43a9aa27a31e64" title="Checks that specified unsigned integer lies between 0 (inclusive) and &lt;size_t&gt;::max()">is_sizet</a>(val);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;}</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;} <span class="comment">// namespace</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;}</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* STATICLIB_SUPPORT_IS_INTEGER_HPP */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 8 2017 13:09:22 for staticlib_support by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 23 2017 12:45:52 for staticlib_support by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>

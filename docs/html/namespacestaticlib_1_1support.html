@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">staticlib_support
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">1.1.0</span>
    </div>
   </td>
  </tr>
@@ -38,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -70,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Groups</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -97,6 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacestaticlib_1_1support_1_1detail__defer"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestaticlib_1_1support_1_1detail__defer.html">detail_defer</a></td></tr>
+<tr class="memitem:namespacestaticlib_1_1support_1_1logic"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestaticlib_1_1support_1_1logic.html">logic</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -142,6 +144,19 @@ bool &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class
 <tr class="memitem:ad05bf3370f4cbcd178d9254de63bee95"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ad05bf3370f4cbcd178d9254de63bee95"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestaticlib_1_1support.html#ad05bf3370f4cbcd178d9254de63bee95">is_uint16_positive</a> (T val)</td></tr>
 <tr class="memdesc:ad05bf3370f4cbcd178d9254de63bee95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that specified integer lies between <code>0</code> (exclusive) and <code>&lt;uint16_t&gt;::max()</code>  <a href="#ad05bf3370f4cbcd178d9254de63bee95"></a><br/></td></tr>
+<tr class="memitem:ad3176a1d306f0725d8ba18f5560b7e73"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ad3176a1d306f0725d8ba18f5560b7e73"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
+&lt; std::is_unsigned&lt; T &gt;::value, <br class="typebreak"/>
+bool &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestaticlib_1_1support.html#ad3176a1d306f0725d8ba18f5560b7e73">is_int64</a> (T val)</td></tr>
+<tr class="memdesc:ad3176a1d306f0725d8ba18f5560b7e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that specified unsigned integer lies between <code>&lt;int64_t&gt;::min()</code> and <code>&lt;int64_t&gt;::max()</code>  <a href="#ad3176a1d306f0725d8ba18f5560b7e73"></a><br/></td></tr>
+<tr class="memitem:a62a39c59a3dc5a647d2ec8f92427cc65"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a62a39c59a3dc5a647d2ec8f92427cc65"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
+&lt; std::is_unsigned&lt; T &gt;::value, <br class="typebreak"/>
+bool &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestaticlib_1_1support.html#a62a39c59a3dc5a647d2ec8f92427cc65">is_uint64</a> (T val)</td></tr>
+<tr class="memdesc:a62a39c59a3dc5a647d2ec8f92427cc65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that specified unsigned integer lies between <code>0</code> (inclusive) and <code>&lt;uint64_t&gt;::max()</code>  <a href="#a62a39c59a3dc5a647d2ec8f92427cc65"></a><br/></td></tr>
+<tr class="memitem:a9ec141d4788111f8020fadd998316569"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a9ec141d4788111f8020fadd998316569"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestaticlib_1_1support.html#a9ec141d4788111f8020fadd998316569">is_uint64_positive</a> (T val)</td></tr>
+<tr class="memdesc:a9ec141d4788111f8020fadd998316569"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that specified integer lies between <code>0</code> (exclusive) and <code>&lt;uint64_t&gt;::max()</code>  <a href="#a9ec141d4788111f8020fadd998316569"></a><br/></td></tr>
 <tr class="memitem:ab29325da01c2de96f1cc8fffc0c8f781"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ab29325da01c2de96f1cc8fffc0c8f781"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if<br class="typebreak"/>
 &lt; std::is_unsigned&lt; T &gt;::value, <br class="typebreak"/>
@@ -155,6 +170,9 @@ bool &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class
 <tr class="memitem:a3ace31d6950dd53b4567d73b44b4195d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a3ace31d6950dd53b4567d73b44b4195d"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestaticlib_1_1support.html#a3ace31d6950dd53b4567d73b44b4195d">is_sizet_positive</a> (T val)</td></tr>
 <tr class="memdesc:a3ace31d6950dd53b4567d73b44b4195d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that specified integer lies between <code>0</code> (exclusive) and <code>&lt;uint32_t&gt;::max()</code>  <a href="#a3ace31d6950dd53b4567d73b44b4195d"></a><br/></td></tr>
+<tr class="memitem:a57c832581e07ac05c979fc9c013f1d1a"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:a57c832581e07ac05c979fc9c013f1d1a"><td class="memTemplItemLeft" align="right" valign="top">std::unique_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestaticlib_1_1support.html#a57c832581e07ac05c979fc9c013f1d1a">make_unique</a> (Args &amp;&amp;...args)</td></tr>
+<tr class="memdesc:a57c832581e07ac05c979fc9c013f1d1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortcut template for creating <code>std::unique_ptr</code>, see <a href="http://herbsutter.com/gotw/_102/">details</a>.  <a href="#a57c832581e07ac05c979fc9c013f1d1a"></a><br/></td></tr>
 <tr class="memitem:a0582c0b63e0df3a12a602e6ecd658c8d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a0582c0b63e0df3a12a602e6ecd658c8d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classstaticlib_1_1support_1_1observer__ptr.html">observer_ptr</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestaticlib_1_1support.html#a0582c0b63e0df3a12a602e6ecd658c8d">make_observer_ptr</a> (T *target)</td></tr>
 <tr class="memdesc:a0582c0b63e0df3a12a602e6ecd658c8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function, constructs new observer instance.  <a href="#a0582c0b63e0df3a12a602e6ecd658c8d"></a><br/></td></tr>
@@ -170,6 +188,8 @@ bool &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class
 <tr class="memitem:a9151f4322b0caacc320cb127743e5771"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a9151f4322b0caacc320cb127743e5771"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacestaticlib_1_1support.html#a9151f4322b0caacc320cb127743e5771">to_string</a> (const T &amp;obj)</td></tr>
 <tr class="memdesc:a9151f4322b0caacc320cb127743e5771"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic <code>to_string</code> implementation, already exists as <code>std::to_string</code> in most C++11 compilers except GCC 4.8 on Android.  <a href="#a9151f4322b0caacc320cb127743e5771"></a><br/></td></tr>
+<tr class="memitem:af69ea9ccffb9250a1beb2c6414ea018d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacestaticlib_1_1support.html#af69ea9ccffb9250a1beb2c6414ea018d">to_string_bool</a> (bool val)</td></tr>
+<tr class="memdesc:af69ea9ccffb9250a1beb2c6414ea018d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts bool value to "true" or "false" string.  <a href="#af69ea9ccffb9250a1beb2c6414ea018d"></a><br/></td></tr>
 </table>
 <h2>Function Documentation</h2>
 <a class="anchor" id="a6f24e0f88636d431df4e27f14c2de3cc"></a>
@@ -246,6 +266,34 @@ template&lt;typename T &gt; </div>
 
 <p>Checks that specified unsigned integer lies between <code>&lt;int32_t&gt;::min()</code> and <code>&lt;int32_t&gt;::max()</code> </p>
 <p>Checks that specified signed integer lies between <code>&lt;int32_t&gt;::min()</code> and <code>&lt;int32_t&gt;::max()</code></p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">val</td><td>integer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if check successful, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad3176a1d306f0725d8ba18f5560b7e73"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt;!std::is_unsigned&lt; T &gt;::value, bool &gt;::type staticlib::support::is_int64 </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks that specified unsigned integer lies between <code>&lt;int64_t&gt;::min()</code> and <code>&lt;int64_t&gt;::max()</code> </p>
+<p>Checks that specified signed integer lies between <code>&lt;int64_t&gt;::min()</code> and <code>&lt;int64_t&gt;::max()</code></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">val</td><td>integer </td></tr>
@@ -449,6 +497,61 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a62a39c59a3dc5a647d2ec8f92427cc65"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if&lt;!std::is_unsigned&lt; T &gt;::value, bool &gt;::type staticlib::support::is_uint64 </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks that specified unsigned integer lies between <code>0</code> (inclusive) and <code>&lt;uint64_t&gt;::max()</code> </p>
+<p>Checks that specified signed integer lies between <code>0</code> (inclusive) and <code>&lt;uint64_t&gt;::max()</code></p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">val</td><td>integer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if check successful, false otherwise </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9ec141d4788111f8020fadd998316569"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool staticlib::support::is_uint64_positive </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks that specified integer lies between <code>0</code> (exclusive) and <code>&lt;uint64_t&gt;::max()</code> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">val</td><td>integer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if check successful, false otherwise </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a0582c0b63e0df3a12a602e6ecd658c8d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -530,6 +633,34 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a57c832581e07ac05c979fc9c013f1d1a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;T&gt; staticlib::support::make_unique </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Shortcut template for creating <code>std::unique_ptr</code>, see <a href="http://herbsutter.com/gotw/_102/">details</a>. </p>
+<p>Becomes obsolete with C++14.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>pointer object constructor arguments </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>smart pointer to created object </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a9151f4322b0caacc320cb127743e5771"></a>
 <div class="memitem">
 <div class="memproto">
@@ -584,10 +715,43 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="af69ea9ccffb9250a1beb2c6414ea018d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string staticlib::support::to_string_bool </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts bool value to "true" or "false" string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">val</td><td>boolean value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>"true" or "false" string </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Apr 8 2017 13:09:22 for staticlib_support by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 23 2017 12:45:52 for staticlib_support by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>
