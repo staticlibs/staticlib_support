@@ -56,6 +56,7 @@ Changelog
 **2017-12-23**
 
  * version 1.0.1
+ * `make_unique` and `tribool` added
  * vs2017 support
 
 **2017-04-08**
