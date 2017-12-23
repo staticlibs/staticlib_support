@@ -22,7 +22,7 @@
  */
 
 #ifndef STATICLIB_SUPPORT_OBSERVER_PTR_HPP
-#define	STATICLIB_SUPPORT_OBSERVER_PTR_HPP
+#define STATICLIB_SUPPORT_OBSERVER_PTR_HPP
 
 #include "staticlib/support/exception.hpp"
 
@@ -188,5 +188,5 @@ observer_ptr<T> make_observer_ptr(T& target) {
 } // namespace
 } 
 
-#endif	/* STATICLIB_SUPPORT_OBSERVER_PTR_HPP */
+#endif /* STATICLIB_SUPPORT_OBSERVER_PTR_HPP */
 

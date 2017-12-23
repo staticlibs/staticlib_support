@@ -22,7 +22,7 @@
  */
 
 #ifndef STATICLIB_SUPPORT_IS_INTEGER_HPP
-#define	STATICLIB_SUPPORT_IS_INTEGER_HPP
+#define STATICLIB_SUPPORT_IS_INTEGER_HPP
 
 #include <cstdint>
 #include <ios>
@@ -258,5 +258,4 @@ bool is_sizet_positive(T val) {
 } // namespace
 }
 
-#endif	/* STATICLIB_SUPPORT_IS_INTEGER_HPP */
-
+#endif /* STATICLIB_SUPPORT_IS_INTEGER_HPP */

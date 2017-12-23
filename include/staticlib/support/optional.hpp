@@ -22,7 +22,7 @@
  */
 
 #ifndef STATICLIB_SUPPORT_OPTIONAL_HPP
-#define	STATICLIB_SUPPORT_OPTIONAL_HPP
+#define STATICLIB_SUPPORT_OPTIONAL_HPP
 
 #include <type_traits>
 
@@ -224,5 +224,5 @@ optional<T> make_optional(T&& value) {
 }
 
 
-#endif	/* STATICLIB_SUPPORT_OPTIONAL_HPP */
+#endif /* STATICLIB_SUPPORT_OPTIONAL_HPP */
 

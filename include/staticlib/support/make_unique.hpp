@@ -22,7 +22,7 @@
  */
 
 #ifndef STATICLIB_SUPPORT_MAKE_UNIQUE_HPP
-#define	STATICLIB_SUPPORT_MAKE_UNIQUE_HPP
+#define STATICLIB_SUPPORT_MAKE_UNIQUE_HPP
 
 #include <memory>
 
@@ -32,7 +32,7 @@ namespace support {
 /**
  * Shortcut template for creating `std::unique_ptr`, 
  * see [details](http://herbsutter.com/gotw/_102/).
- * Will became obsolete in C++14.
+ * Becomes obsolete with C++14.
  * 
  * @param args pointer object constructor arguments
  * @return smart pointer to created object
@@ -45,5 +45,4 @@ std::unique_ptr<T> make_unique(Args&& ...args) {
 } // namespace
 }
 
-#endif	/* STATICLIB_SUPPORT_MAKE_UNIQUE_HPP */
-
+#endif /* STATICLIB_SUPPORT_MAKE_UNIQUE_HPP */

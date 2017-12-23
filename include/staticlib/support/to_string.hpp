@@ -22,7 +22,7 @@
  */
 
 #ifndef STATICLIB_SUPPORT_TO_STRING_HPP
-#define	STATICLIB_SUPPORT_TO_STRING_HPP
+#define STATICLIB_SUPPORT_TO_STRING_HPP
 
 #include <sstream>
 #include <string>
@@ -56,7 +56,7 @@ template<typename T>
 std::string to_string(const T& obj) {
 #ifndef STATICLIB_ANDROID
     return std::to_string(obj);
-#else     
+#else
     return to_string_any(obj);
 #endif // STATICLIB_ANDROID
 }
@@ -74,5 +74,5 @@ inline std::string to_string_bool(bool val) {
 } // namespace
 }
 
-#endif	/* STATICLIB_SUPPORT_TO_STRING_HPP */
+#endif /* STATICLIB_SUPPORT_TO_STRING_HPP */
 

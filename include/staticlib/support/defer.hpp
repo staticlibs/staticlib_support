@@ -22,7 +22,7 @@
  */
 
 #ifndef STATICLIB_SUPPORT_DEFER_HPP
-#define	STATICLIB_SUPPORT_DEFER_HPP
+#define STATICLIB_SUPPORT_DEFER_HPP
 
 #include <utility>
 
@@ -111,5 +111,5 @@ detail_defer::defer_guard<T> defer(T func) {
 } // namespace
 }
 
-#endif	/* STATICLIB_SUPPORT_DEFER_HPP */
+#endif /* STATICLIB_SUPPORT_DEFER_HPP */
 
