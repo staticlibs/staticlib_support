@@ -108,7 +108,8 @@ void test_is_streamsize() {
     slassert(sl::support::is_streamsize(-1));
     slassert(sl::support::is_streamsize(0));
     slassert(sl::support::is_streamsize(1));
-    slassert(!sl::support::is_streamsize(std::numeric_limits<size_t>::max()));
+    // false on 32-bit
+    // slassert(!sl::support::is_streamsize(std::numeric_limits<size_t>::max()));
     slassert(sl::support::is_streamsize(std::numeric_limits<std::streamsize>::min()));
 }
 
