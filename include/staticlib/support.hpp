@@ -32,6 +32,7 @@
 #include "staticlib/support/make_unique.hpp"
 #include "staticlib/support/observer_ptr.hpp"
 #include "staticlib/support/optional.hpp"
+#include "staticlib/support/release_deleter.hpp"
 #include "staticlib/support/to_string.hpp"
 #include "staticlib/support/tribool.hpp"
 
