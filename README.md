@@ -53,6 +53,11 @@ This project is released under the [Apache License 2.0](http://www.apache.org/li
 Changelog
 ---------
 
+**2018-06-12**
+
+ * version 1.2.0
+ * `release_deleter` added
+
 **2017-12-23**
 
  * version 1.0.1
