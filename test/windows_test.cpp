@@ -45,4 +45,10 @@ int main() {
     return 0;
 }
 
+#else // !STATICLIB_WINDOWS
+
+int main() {
+    return 0;
+}
+
 #endif // STATICLIB_WINDOWS
